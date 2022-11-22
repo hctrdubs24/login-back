@@ -6,6 +6,8 @@ const UserSchema = new Schema({
   },
   Login: {
     type: String,
+    unique: true,
+    dropDups: true,
   },
   Password: {
     type: String,
